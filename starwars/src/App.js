@@ -5,7 +5,7 @@ import './App.css';
 import Character from './components/Character';
 
 const CharContainer = styled.div`
-  width: 80%;
+  width: 60%;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -23,7 +23,7 @@ const App = () => {
     axios
       .get('https://swapi.py4e.com/api/people/')
       .then(response => setData(response.data.results));
-  }, [data]);
+  }, []);
 
   return (
     <div className="App">
